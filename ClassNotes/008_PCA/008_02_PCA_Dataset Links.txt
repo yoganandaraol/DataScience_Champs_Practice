@@ -1,0 +1,11 @@
+Copy the below link and paste it in pd.read_csv("link_here") to download data-set for case study.
+
+
+
+https://raw.githubusercontent.com/insaid2018/pca-file/master/train.csv
+
+
+
+eg: 
+
+data = pd.read_csv("https://raw.githubusercontent.com/insaid2018/pca-file/master/train.csv") 
