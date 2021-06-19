@@ -1,3 +1,13 @@
+# Import Libraries
+import pandas as pd
+import numpy as np
+from pandas_profiling import ProfileReport                          # Import Pandas Profiling (To generate Univariate Analysis)
+pd.set_option('display.float_format',lambda x: '%5f' % x)
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+
 
 # Data Preprocessing (standardization)
 `from sklearn.preprocessing import StandardScaler`
@@ -9,6 +19,15 @@
 
 * OHE is not a mandatory step for all model preparation
 ex. Decision Trees model does not infulenced by OHE
+
+## Label Encoding
+### Import label encoder 
+from sklearn import preprocessing
+### label_encoder object knows how to understand word labels. 
+label_encoder = preprocessing.LabelEncoder()
+### Encode labels in column 'Country'. 
+data['Country']= label_encoder.fit_transform(data[‘Country']) 
+print(data.head())
 
 
 #  Model Selection
